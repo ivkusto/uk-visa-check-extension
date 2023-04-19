@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "UK Visa Sponsorship Checker",
+  "version": "0.0.1.0",
+  "version_name": "0.0.1",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/content.tsx-loader-6f8bd3aa.js"
+      ],
+      "matches": [
+        "*://*.indeed.com/*"
+      ],
+      "css": [
+        "assets/index-5265c558.css",
+        "assets/content-cf3285d3.css"
+      ]
+    }
+  ],
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://*.indeed.com/*"
+      ],
+      "resources": [
+        "assets/index-f126c1d9.js",
+        "assets/content.tsx-24113c95.js"
+      ],
+      "use_dynamic_url": true
+    }
+  ]
+}
