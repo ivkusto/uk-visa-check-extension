@@ -3,7 +3,7 @@ import { render } from "solid-js/web";
 
 import "./index.css";
 
-import Sticker from "./components/sticker/sticker";
+import Sticker from "./components/content/sticker/sticker";
 import { OrgData } from "./types/org-data";
 
 window.addEventListener("load", async () => {

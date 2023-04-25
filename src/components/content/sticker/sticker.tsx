@@ -1,8 +1,8 @@
 import { Component, For } from "solid-js";
 import styles from "./sticker.module.css";
 import { createSignal } from "solid-js";
-import { OrgData } from "../../types/org-data";
-import Popup from "../popup/popup";
+import { OrgData } from "../../../types/org-data";
+import CompaniesModal from "../companies-modal/companies-modal";
 
 const Sticker: Component<StickerProps> = ({
   secondaryResult,
@@ -43,7 +43,7 @@ const Sticker: Component<StickerProps> = ({
           </button>
         )}
       </div>
-      <Popup opened={opened()} companies={list()} />
+      <CompaniesModal opened={opened()} companies={list()} />
     </div>
   );
 };

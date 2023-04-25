@@ -1,8 +1,8 @@
 import { Component, For, Show, Signal } from "solid-js";
-import { OrgData } from "../../types/org-data";
-import styles from "./popup.module.css";
+import { OrgData } from "../../../types/org-data";
+import styles from "./companies-modal.module.css";
 
-const Popup: Component<PopupProps> = (props) => {
+const CompaniesModal: Component<CompaniesModalProps> = (props) => {
   return (
     <Show when={props.opened}>
       <div class={styles.popup}>
@@ -16,9 +16,9 @@ const Popup: Component<PopupProps> = (props) => {
   );
 };
 
-interface PopupProps {
+interface CompaniesModalProps {
   opened: boolean;
   companies: OrgData[];
 }
 
-export default Popup;
+export default CompaniesModal;
