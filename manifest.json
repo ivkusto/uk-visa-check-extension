@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "UK Visa Sponsorship Checker",
-  "version": "0.0.1.0",
-  "version_name": "0.0.1",
+  "version": "0.0.4.0",
+  "version_name": "0.0.4",
   "action": {
     "default_popup": "index.html"
   },
