@@ -1,6 +1,7 @@
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 import { crx } from "@crxjs/vite-plugin";
+import autoprefixer from "autoprefixer";
 import manifest from "./manifest.config";
 
 export default defineConfig({
@@ -10,5 +11,10 @@ export default defineConfig({
   },
   build: {
     target: "esnext",
+  },
+  css: {
+    postcss: {
+      plugins: [autoprefixer],
+    },
   },
 });

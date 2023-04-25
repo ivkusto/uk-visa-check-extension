@@ -1,0 +1,13 @@
+:root {
+  /* primitives */
+  --bittersweet: hsla(7, 91%, 69%, 1);
+  --violet: hsla(253, 100%, 10%, 1);
+  --davys-gray: hsla(30, 1%, 37%, 1);
+  --cerulean: hsla(198, 63%, 38%, 1);
+  --platinum: hsla(0, 0%, 89%, 1);
+
+  /* tokens */
+  --background: var(--platinum);
+  --text-primary: var(--violet);
+  --link: var(--cerulean);
+}

@@ -1,0 +1,19 @@
+@import "../../../styles/colors.module.css";
+
+.input {
+  &::file-selector-button {
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+    background-color: var(--violet);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+  }
+  &:disabled {
+    opacity: 0.6;
+    cursor: progress;
+    &::file-selector-button {
+      cursor: progress;
+    }
+  }
+}
