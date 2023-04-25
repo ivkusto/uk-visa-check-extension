@@ -28,5 +28,10 @@
   },
   "dependencies": {
     "solid-js": "^1.6.10"
+  },
+  "overrides": {
+    "jest-chrome": {
+      "jest": "$jest"
+    }
   }
 }
