@@ -1,8 +1,6 @@
 /* @refresh reload */
 import { render } from "solid-js/web";
 
-import "./index.css";
-
 import Sticker from "./components/content/sticker/sticker";
 import { OrgData } from "./types/org-data";
 
